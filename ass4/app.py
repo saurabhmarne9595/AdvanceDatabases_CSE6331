@@ -7,8 +7,8 @@ server_name = 'marneserver'
 server = '{server_name}.database.windows.net,1433;'.format(server_name=server_name)
 database = 'marnedb'
 username = 'marneadmin'
-password = 'Marne@1234'
-# Connection_str="Driver={ODBC Driver 17 for SQL Server};Server=tcp:adbass.database.windows.net,1433;Database=adbdb;Uid=sqladmin;Pwd=Marne@1234;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"        
+password = 'my_password'
+# Connection_str="Driver={ODBC Driver 17 for SQL Server};Server=tcp:adbass.database.windows.net,1433;Database=adbdb;Uid=sqladmin;Pwd=my_password;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"        
 Connection_str = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password
 app = Flask(__name__)
 conn = pyodbc.connect(Connection_str)
