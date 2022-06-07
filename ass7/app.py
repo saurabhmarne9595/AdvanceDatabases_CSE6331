@@ -6,15 +6,15 @@ server_name = 'marneserver'
 server = '{server_name}.database.windows.net,1433;'.format(server_name=server_name)
 database = 'marnedb'
 username = 'marneadmin'
-password = 'Marne@1234'
+password = 'my_password'
 Connection_str = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password
 app = Flask(__name__)
 conn = pyodbc.connect(Connection_str)
 cursor=conn.cursor()
 
-# primary = 'kQv8CGbmCcVaFIfq3Uziom8RJbuNhevyDAzCaASW488='
-# secondary = 'RtdyFGXwimiZz6erOaDQOshtzRsls0kbVAzCaAp9Blo='
-# Primary_connection_string='adbass.redis.cache.windows.net:6380,password=kQv8CGbmCcVaFIfq3Uziom8RJbuNhevyDAzCaASW488=,ssl=True,abortConnect=False'
+# primary = '----------------------------------='
+# secondary = '------------------------------='
+# Primary_connection_string='adbass.redis.cache.windows.net:6380,password=----------------------------------=,ssl=True,abortConnect=False'
 
 # r = redis.Redis(host='adbass.redis.cache.windows.net', port=6380,  password=primary)
 
