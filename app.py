@@ -9,7 +9,7 @@ from azure.storage.blob import BlobServiceClient
 server ='tcp:adbassignmentserver1.database.windows.net' 
 database ='adbassignment1' 
 username ='saurabh'
-password ='cc_12345'
+password ='password'
 conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
 cursor = conn.cursor()
 
